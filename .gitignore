@@ -1,0 +1,7 @@
+*.o
+scanner_main
+__pycache__/
+*.pyc
+logs/
+*.json
+scan_efficiency.png
