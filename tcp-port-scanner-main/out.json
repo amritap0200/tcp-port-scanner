@@ -1,0 +1,34 @@
+{
+  "target": "127.0.0.1",
+  "stats": {
+    "total_ports": 9000,
+    "open_ports": 3,
+    "closed_ports": 8997,
+    "filtered_ports": 0,
+    "total_time_sec": 0.325,
+    "ports_per_second": 27704.6
+  },
+  "results": [
+    {
+      "port": 2121,
+      "status": "open",
+      "response_ms": 0.5,
+      "banner": "220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------  220-You are user number 1 of 5 allowed.  220-Local time is now 06:56. Server port: 21.  220-This is a private system - No anonymous login",
+      "service": "FTP"
+    },
+    {
+      "port": 2222,
+      "status": "open",
+      "response_ms": 0.7,
+      "banner": "SSH-2.0-OpenSSH_7.6p1 Ubuntu-4  ",
+      "service": "SSH"
+    },
+    {
+      "port": 8080,
+      "status": "open",
+      "response_ms": 0.2,
+      "banner": "HTTP/1.1 200 OK  Server: nginx/1.29.6  Date: Mon, 23 Mar 2026 06:56:30 GMT  Content-Type: text/html  Content-Length: 896  Last-Modified: Tue, 10 Mar 2026 15:29:07 GMT  Connection: close  ETag: \"69b038",
+      "service": "HTTP"
+    }
+  ]
+}
