@@ -1,8 +1,0 @@
-[
-  { "name": "HTTP", "pattern": "HTTP" },
-  { "name": "HTTP", "pattern": "Apache" },
-  { "name": "SSH",  "pattern": "SSH" },
-  { "name": "SSH",  "pattern": "OpenSSH" },
-  { "name": "FTP",  "pattern": "FTP" },
-  { "name": "FTP",  "pattern": "Pure-FTPd" }
-]

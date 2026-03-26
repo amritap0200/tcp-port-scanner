@@ -1,0 +1,61 @@
+services:
+  http:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+
+  ftp:
+    image: fauria/vsftpd
+    ports:
+      - "2121:21"
+    environment:
+      - FTP_USER=user
+      - FTP_PASS=pass
+
+  ssh:
+    image: linuxserver/openssh-server
+    ports:
+      - "2222:2222"
+    environment:
+      - PASSWORD_ACCESS=true
+      - USER_PASSWORD=password
+
+  apache:
+    image: httpd:latest
+    ports:
+      - "8081:80"
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3306:3306"
+
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+
+  smtp:
+    image: namshi/smtp
+    ports:
+      - "2525:25"
+
+  nodeapp:
+    image: node:18
+    command: sh -c "npm install -g http-server && http-server -p 3000"
+    ports:
+      - "3000:3000"
